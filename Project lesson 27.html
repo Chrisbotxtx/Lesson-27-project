@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project on Mapping and array</title>
+</head>
+<body>
+ <h3>Map and Array project</h3>
+<button onclick="ascending()">Ascending</button>
+<button onclick="descending()">Descending</button>
+ <p id="p1"></p>
+ <p id="p2"></p>
+ <p id="p3"></p>
+ <script>
+    var num=[12,23,34,45,56,67];
+    document.getElementById("p1").innerHTML=num;
+
+
+   var num = [12,23,34,45,56,67]
+    document.getElementById("p1").innerHTML = num;
+    function function1(x) {
+        return x * 5;
+    }
+    var map_array = num.map(function1);
+    document.getElementById("p2").innerHTML = "Mapped array is " + map_array
+        
+
+    var num = [12,23,34,45,56,67];
+        document.getElementById("p1").innerHTML = num;
+        function ascending() {
+            var res = num.sort(function (a, b) { return a - b });
+            document.getElementById("p2").innerHTML = res;
+        }
+        function descending() {
+            var res = num.sort(function (a, b) { return b - a });
+            document.getElementById("p3").innerHTML = res;
+        }
+ </script>
+   
+</body>
+</html>
